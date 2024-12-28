@@ -12,10 +12,10 @@
 		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&amp;subset=devanagari,latin-ext" rel="stylesheet">
         
         <!-- title of site -->
-        <title>Abenanth</title>
+        <title>Abenanth | Personal-Website</title>
 
         <!-- For favicon png -->
-		<!-- <link rel="shortcut icon" type="image/icon" href="assets/logo/favicon.png"/> -->
+		<link rel="shortcut icon" type="image/icon" href="assets/logo/favicon.png"/>
        
         <!--font-awesome.min.css-->
         <link rel="stylesheet" href="assets/css/font-awesome.min.css">
@@ -104,14 +104,17 @@
 						<div class="header-text">
 							<h2>hello ! <span>,</span> i am <br> Abenanth <br>   </h2>
 							<p>Machine Learning Engineer</p>
-							<a href="assets/download/Abenanth_Resume.pdf" download>download resume</a>
+							<div class="button-container">
+								<a href="assets/download/Abenanth_Resume.pdf" class="download-resume-btn" download>download resume</a>
+								<a href="mailto:kalyanaa@ualberta.ca" class="hire-me-btn">hire me</a>
+							</div>
 						</div><!--/.header-text-->
 					</div><!--/.col-->
 				</div><!-- /.row-->
 			</div><!-- /.container-->
-
 		</section><!--/.welcome-hero-->
 		<!--welcome-hero end -->
+
 
 		<!-- About Me Start -->
 		<section id="about" class="about">
@@ -633,20 +636,28 @@
 			<div class="container">
 				<div class="hm-footer-copyright text-center">
 					<p>
-						&copy; copyright @Abenanth. design and developed by Abenanth
+						&copy; <span id="current-year"></span> Abenanth. Developed by Abenanth.
 					</p><!--/p-->
 				</div><!--/.text-center-->
 			</div><!--/.container-->
 
 			<div id="scroll-Top">
 				<div class="return-to-top">
-					<i class="fa fa-angle-up " id="scroll-top" ></i>
+					<i class="fa fa-angle-up" id="scroll-top"></i>
 				</div>
-				
 			</div><!--/.scroll-Top-->
-			
-        </footer><!--/.footer-copyright-->
+		</footer><!--/.footer-copyright-->
 		<!--footer-copyright end-->
+
+		<script>
+			// Get the current year
+			var currentYear = new Date().getFullYear();
+
+			// Set the current year to the span with id 'current-year'
+			document.getElementById('current-year').textContent = currentYear;
+		</script>
+
+
 		
 		<!-- Include all js compiled plugins (below), or include individual files as needed -->
 
